@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:open_fashion_app/views/blog/blog_view.dart';
 import 'package:open_fashion_app/views/products/products_view.dart';
 
 void main() {

@@ -3,6 +3,7 @@ import 'package:open_fashion_app/models/product_model.dart';
 
 import '../../../core/utils/constants.dart';
 import '../../../shared/rate_icon.dart';
+import 'product_size_widget.dart';
 
 class ProductsWidget extends StatelessWidget {
   final ProductModel? products;
@@ -66,30 +67,7 @@ class ProductsWidget extends StatelessWidget {
               rate: products!.ratings!,
             ),
             const SizedBox(height: 10),
-            SizedBox(
-              height: 30,
-              width: screenWidth(context) / 3,
-              child: ListView.builder(
-                shrinkWrap: true,
-                physics: const NeverScrollableScrollPhysics(),
-                scrollDirection: Axis.horizontal,
-                itemCount: products!.sizes!.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return CircleAvatar(
-                    radius: 20,
-                    backgroundColor: Constants.lineColor,
-                    child: Text(
-                      products!.sizes![index],
-                      style: const TextStyle(
-                        color: Constants.titleBlack,
-                        fontFamily: 'Handlee',
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
+            ProductSizesWidget(products: products),
           ],
         ),
       ],

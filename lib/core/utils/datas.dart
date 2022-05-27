@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:open_fashion_app/models/blog_model.dart';
 import 'package:open_fashion_app/models/product_model.dart';
 
@@ -58,7 +59,7 @@ final List<ProductModel> products = [
   ),
   ProductModel(
     id: '2',
-    productName: 'LAMEREI',
+    productName: 'BOSS',
     description: 'Recycle Boucle Knit Cardigan Pink',
     productImage: 'assets/sweater/sweaterTwo.png',
     price: '\$${100}',
@@ -67,7 +68,7 @@ final List<ProductModel> products = [
   ),
   ProductModel(
     id: '3',
-    productName: 'LAMEREI',
+    productName: 'CARTIER',
     description: 'Recycle Boucle Knit Cardigan Pink',
     productImage: 'assets/sweater/sweaterFour.png',
     price: '\$${70}',
@@ -76,7 +77,7 @@ final List<ProductModel> products = [
   ),
   ProductModel(
     id: '4',
-    productName: 'LAMEREI',
+    productName: 'PRADA',
     description: 'Recycle Boucle Knit Cardigan Pink',
     productImage: 'assets/sweater/sweaterSix.png',
     price: '\$${40}',
@@ -85,11 +86,19 @@ final List<ProductModel> products = [
   ),
   ProductModel(
     id: '5',
-    productName: 'LAMEREI',
+    productName: 'BURBERRY',
     description: 'Recycle Boucle Knit Cardigan Pink',
     productImage: 'assets/sweater/sweaterNine.png',
     price: '\$${110}',
     ratings: '4.3',
     sizes: ['S', 'M', 'L'],
   ),
+];
+
+final List<Color> colors = [
+  Colors.black,
+  Colors.blue,
+  Colors.red,
+  Colors.orange,
+  Colors.yellow,
 ];
