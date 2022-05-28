@@ -109,3 +109,10 @@ final List<String> homeBanner = [
   'assets/header_onboarding/headerThree.jpg',
   'assets/header_onboarding/headerFour.jpg',
 ];
+
+final List<String> homeNewArrival = [
+  'assets/new_arrival/newOne.png',
+  'assets/new_arrival/newTwo.png',
+  'assets/new_arrival/newThree.png',
+  'assets/new_arrival/newFour.png',
+];

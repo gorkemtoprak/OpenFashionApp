@@ -16,7 +16,7 @@ class AllProductsGridWidget extends StatelessWidget {
         mainAxisExtent: 230,
       ),
       physics: const NeverScrollableScrollPhysics(),
-      itemCount: 4,
+      itemCount: homeNewArrival.length,
       itemBuilder: (BuildContext context, int index) {
         return Column(
           children: [
@@ -24,7 +24,7 @@ class AllProductsGridWidget extends StatelessWidget {
               clipBehavior: Clip.hardEdge,
               borderRadius: const BorderRadius.all(Radius.circular(15)),
               child: Image.asset(
-                products[0].productImage!,
+                homeNewArrival[index],
                 height: screenHeight(context) / 5.5,
                 width: screenWidth(context) / 3,
                 fit: BoxFit.cover,
