@@ -19,6 +19,23 @@ class Constants {
   static final Image ourStory = Image.asset('assets/ourStoryPhotoImage.png');
   static final Image slogan = Image.asset('assets/slogan.png');
 
+  //Social media icons
+  static final Image instagram = Image.asset(
+    'assets/icons/socialMediaIcon/Instagram.png',
+    width: 24,
+    height: 24,
+  );
+  static final Image twitter = Image.asset(
+    'assets/icons/socialMediaIcon/Twitter.png',
+    width: 24,
+    height: 24,
+  );
+  static final Image youtube = Image.asset(
+    'assets/icons/socialMediaIcon/YouTube.png',
+    width: 24,
+    height: 24,
+  );
+
   // headerIcons
   static final Image logoIcon = Image.asset(
     'assets/icons/headerIcon/Logo.png',

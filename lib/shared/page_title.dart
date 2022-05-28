@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../core/utils/constants.dart';
+import '../views/home/widgets/extra_info_text_widget.dart';
 
 class PageTitleWidget extends StatelessWidget {
   final String? title;
@@ -26,11 +27,7 @@ class PageTitleWidget extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         Center(
-          child: SizedBox(
-            width: 120,
-            height: 10,
-            child: Constants.line,
-          ),
+          child: customLine(context),
         ),
       ],
     );

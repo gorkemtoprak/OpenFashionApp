@@ -15,6 +15,9 @@ dependencies:
   #UTILS
   cupertino_icons: ^1.0.2
   expandable: ^5.0.1
+  dots_indicator: ^2.1.0
+  carousel_slider: ^4.1.1
+  tab_indicator_styler: ^2.0.0
 
 dev_dependencies:
   flutter_test:

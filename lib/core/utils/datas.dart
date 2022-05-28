@@ -102,3 +102,10 @@ final List<Color> colors = [
   Colors.orange,
   Colors.yellow,
 ];
+
+final List<String> homeBanner = [
+  'assets/header_onboarding/first_header.png',
+  'assets/header_onboarding/headerTwo.jpg',
+  'assets/header_onboarding/headerThree.jpg',
+  'assets/header_onboarding/headerFour.jpg',
+];

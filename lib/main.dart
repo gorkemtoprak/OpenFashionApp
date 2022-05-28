@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:open_fashion_app/views/home/home_view.dart';
 import 'package:open_fashion_app/views/products/products_view.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const ProductsView(),
+      home: const HomeView(),
     );
   }
 }
