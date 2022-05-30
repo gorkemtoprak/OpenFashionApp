@@ -57,6 +57,25 @@ class Constants {
     width: 24,
     height: 24,
   );
+
+  // Contact us icons
+  static final Image addMessageIcon = Image.asset(
+    'assets/icons/contactUsIcons/Add Message.png',
+    width: 45,
+    height: 45,
+  );
+
+  static final Image chatIcon = Image.asset(
+    'assets/icons/contactUsIcons/Chat Message.png',
+    width: 45,
+    height: 45,
+  );
+
+  static final Image orangeTwitterIcon = Image.asset(
+    'assets/icons/contactUsIcons/Twitter.png',
+    width: 45,
+    height: 45,
+  );
 }
 
 double screenWidth(context) {

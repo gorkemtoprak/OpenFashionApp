@@ -16,7 +16,7 @@ class BlogDetailView extends StatelessWidget {
     var scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
       key: scaffoldKey,
-      appBar: customAppBar(scaffoldKey),
+      appBar: customAppBarWithBack(context),
       backgroundColor: Constants.offWhiteColor,
       body: Column(
         children: [

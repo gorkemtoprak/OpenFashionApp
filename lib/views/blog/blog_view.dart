@@ -1,10 +1,10 @@
-import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'package:open_fashion_app/core/utils/constants.dart';
 import 'package:open_fashion_app/core/utils/datas.dart';
 import 'package:open_fashion_app/views/blog/subviews/blog_detail_view.dart';
 
 import '../../shared/custom_app_bar.dart';
+import '../../shared/drawer.dart';
 import '../../shared/page_title.dart';
 import 'widgets/blog_card_widget.dart';
 
@@ -17,37 +17,8 @@ class BlogView extends StatelessWidget {
     return Scaffold(
       key: scaffoldKey,
       appBar: customAppBar(scaffoldKey),
-      drawer: Drawer(
-        child: Padding(
-          padding: customPadding(),
-          child: Column(
-            children: [
-              Constants.logoIcon,
-              SizedBox(
-                width: 150,
-                height: 20,
-                child: Constants.line,
-              ),
-              ExpandablePanel(
-                header: const Text(
-                  'New',
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: Constants.titleBlack,
-                  ),
-                ),
-                collapsed: const Text(''),
-                expanded: const Text(
-                  'abasdasdasd',
-                  softWrap: true,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
       backgroundColor: Constants.offWhiteColor,
+      drawer: const NavigationDrawerWidget(),
       body: Padding(
         padding: customPadding(),
         child: Column(

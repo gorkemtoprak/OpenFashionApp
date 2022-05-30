@@ -61,12 +61,12 @@ class MainView extends StatelessWidget {
                 ),
                 BottomNavigationBarItem(
                   activeIcon: Icon(
-                    Icons.food_bank_rounded,
+                    Icons.read_more,
                     size: 25,
                     color: Constants.secondaryColor,
                   ),
                   icon: Icon(
-                    Icons.food_bank_rounded,
+                    Icons.read_more,
                     size: 25,
                     color: Constants.placeholderColor,
                   ),
@@ -84,19 +84,6 @@ class MainView extends StatelessWidget {
                     color: Constants.placeholderColor,
                   ),
                   label: 'Checkout',
-                ),
-                BottomNavigationBarItem(
-                  activeIcon: Icon(
-                    Icons.person,
-                    size: 25,
-                    color: Constants.primaryColor,
-                  ),
-                  icon: Icon(
-                    Icons.person,
-                    size: 25,
-                    color: Constants.placeholderColor,
-                  ),
-                  label: 'Profile',
                 ),
               ],
             ),

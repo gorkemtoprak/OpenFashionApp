@@ -1,3 +1,4 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:open_fashion_app/views/home/widgets/extra_info_text_widget.dart';
 
@@ -24,29 +25,35 @@ class NavigationDrawerWidget extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
               buildMenuItem(
+                onClicked: () {},
                 text: 'My Addresses',
                 icon: Icons.my_location_outlined,
-                onClicked: () {},
               ),
               buildMenuItem(
+                onClicked: () {
+                  AutoRouter.of(context).pushNamed('/payment');
+                },
                 text: 'Payment Methods',
                 icon: Icons.credit_card,
-                onClicked: () {},
               ),
               buildMenuItem(
+                onClicked: () {
+                  AutoRouter.of(context).pushNamed('/aboutUs');
+                },
                 text: 'About Us',
                 icon: Icons.info_outline_rounded,
-                onClicked: () {},
               ),
               buildMenuItem(
+                onClicked: () {
+                  AutoRouter.of(context).pushNamed('/contactUs');
+                },
                 text: 'Contact Us',
                 icon: Icons.quick_contacts_dialer_outlined,
-                onClicked: () {},
               ),
               buildMenuItem(
+                onClicked: () {},
                 text: 'Help',
                 icon: Icons.help_center_outlined,
-                onClicked: () {},
               ),
               const SizedBox(height: 40),
               Column(

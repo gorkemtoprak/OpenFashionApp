@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:open_fashion_app/views/home/home_view.dart';
 
 import 'core/navigation/router.gr.dart';
 
