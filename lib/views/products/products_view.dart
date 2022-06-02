@@ -33,7 +33,9 @@ class ProductsView extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const ProductsDetailView(),
+                              builder: (context) => ProductsDetailView(
+                                product: products[index],
+                              ),
                             ));
                       },
                       child: ProductsWidget(

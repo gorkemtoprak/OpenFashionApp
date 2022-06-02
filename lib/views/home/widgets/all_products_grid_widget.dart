@@ -3,6 +3,7 @@ import 'package:stacked/stacked.dart';
 
 import '../../../core/utils/constants.dart';
 import '../../../viewmodels/home_view_model.dart';
+import '../../products/subviews/products_detail_view.dart';
 
 class AllProductsGridWidget extends StatelessWidget {
   final String? type;
@@ -25,39 +26,50 @@ class AllProductsGridWidget extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           itemCount: model.allProduct.length,
           itemBuilder: (BuildContext context, int index) {
-            return Column(
-              children: [
-                ClipRRect(
-                  clipBehavior: Clip.hardEdge,
-                  borderRadius: const BorderRadius.all(Radius.circular(15)),
-                  child: Image.asset(
-                    model.allProduct[index].productImage!,
-                    height: screenHeight(context) / 6,
-                    width: screenWidth(context) / 3,
-                    fit: BoxFit.fill,
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ProductsDetailView(
+                        product: model.allProduct[index],
+                      ),
+                    ));
+              },
+              child: Column(
+                children: [
+                  ClipRRect(
+                    clipBehavior: Clip.hardEdge,
+                    borderRadius: const BorderRadius.all(Radius.circular(15)),
+                    child: Image.asset(
+                      model.allProduct[index].productImage!,
+                      height: screenHeight(context) / 6,
+                      width: screenWidth(context) / 3,
+                      fit: BoxFit.fill,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  model.allProduct[index].productName ?? '',
-                  style: const TextStyle(
-                    fontFamily: 'Handlee',
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
+                  const SizedBox(height: 10),
+                  Text(
+                    model.allProduct[index].productName ?? '',
+                    style: const TextStyle(
+                      fontFamily: 'Handlee',
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 5),
-                Text(
-                  model.allProduct[index].price!,
-                  style: const TextStyle(
-                    fontFamily: 'Handlee',
-                    color: Constants.secondaryColor,
-                    wordSpacing: 3,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
+                  const SizedBox(height: 5),
+                  Text(
+                    model.allProduct[index].price!,
+                    style: const TextStyle(
+                      fontFamily: 'Handlee',
+                      color: Constants.secondaryColor,
+                      wordSpacing: 3,
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             );
           },
         );

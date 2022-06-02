@@ -41,7 +41,8 @@ class ProductInformationWidget extends StatelessWidget {
         ),
         const SizedBox(height: 10),
         Text(
-          '\$$price',
+          // '\$$price',
+          price ?? '',
           style: const TextStyle(
             fontFamily: 'Handlee',
             fontWeight: FontWeight.w600,

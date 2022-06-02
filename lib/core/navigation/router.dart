@@ -3,6 +3,8 @@ import 'package:open_fashion_app/views/blog/blog_view.dart';
 import 'package:open_fashion_app/views/checkout/checkout_view.dart';
 import 'package:open_fashion_app/views/menu/contact_us/contact_us_view.dart';
 import 'package:open_fashion_app/views/menu/payment/payment_view.dart';
+import 'package:open_fashion_app/views/products/products_view.dart';
+import 'package:open_fashion_app/views/products/subviews/products_detail_view.dart';
 
 import '../../main_view.dart';
 import '../../views/home/home_view.dart';
@@ -19,6 +21,7 @@ import '../../views/menu/about_us/about_us_view.dart';
       children: [
         RedirectRoute(path: '', redirectTo: 'home'),
         AutoRoute(initial: true, page: HomeView, name: 'home', path: 'home'),
+        AutoRoute(page: ProductsView, name: 'products', path: 'products'),
         AutoRoute(page: BlogView, name: 'blogs', path: 'blogs'),
         AutoRoute(page: CheckoutView, name: 'checkOut', path: 'checkOut'),
       ],
@@ -37,6 +40,11 @@ import '../../views/menu/about_us/about_us_view.dart';
       page: PaymentView,
       name: 'payment',
       path: '/payment',
+    ),
+    AutoRoute(
+      page: ProductsDetailView,
+      name: 'productDetail',
+      path: '/productDetail',
     ),
   ],
 )

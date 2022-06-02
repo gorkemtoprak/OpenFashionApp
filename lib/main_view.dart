@@ -12,6 +12,7 @@ class MainView extends StatelessWidget {
     return AutoTabsRouter(
       routes: const [
         Home(),
+        Products(),
         Blogs(),
         CheckOut(),
       ],
@@ -58,6 +59,19 @@ class MainView extends StatelessWidget {
                     color: Constants.placeholderColor,
                   ),
                   label: 'Home',
+                ),
+                BottomNavigationBarItem(
+                  activeIcon: Icon(
+                    Icons.production_quantity_limits_outlined,
+                    size: 25,
+                    color: Constants.primaryColor,
+                  ),
+                  icon: Icon(
+                    Icons.production_quantity_limits_outlined,
+                    size: 25,
+                    color: Constants.placeholderColor,
+                  ),
+                  label: 'Products',
                 ),
                 BottomNavigationBarItem(
                   activeIcon: Icon(

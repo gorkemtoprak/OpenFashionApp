@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:open_fashion_app/core/utils/datas.dart';
+import 'package:open_fashion_app/models/product_model.dart';
 import 'package:open_fashion_app/views/checkout/checkout_view.dart';
 
 import '../../../core/utils/constants.dart';
@@ -10,14 +11,16 @@ import '../widgets/product_information_widget.dart';
 import '../widgets/product_size_widget.dart';
 
 class ProductsDetailView extends StatelessWidget {
-  const ProductsDetailView({Key? key}) : super(key: key);
+  final ProductModel? product;
+  const ProductsDetailView({
+    Key? key,
+    this.product,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    var scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
-      key: scaffoldKey,
-      appBar: customAppBar(scaffoldKey),
+      appBar: customAppBarWithBack(context),
       backgroundColor: Constants.offWhiteColor,
       body: SingleChildScrollView(
         physics: const ClampingScrollPhysics(),
@@ -32,7 +35,7 @@ class ProductsDetailView extends StatelessWidget {
                     clipBehavior: Clip.hardEdge,
                     borderRadius: BorderRadius.circular(15),
                     child: Image.asset(
-                      'assets/sweaterWearing/sOne.png',
+                      product!.productImage ?? '',
                       height: screenHeight(context) / 2.2,
                       width: screenWidth(context),
                       fit: BoxFit.fill,
@@ -57,10 +60,10 @@ class ProductsDetailView extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 20),
-              const ProductInformationWidget(
-                brand: 'MOHAN',
-                description: 'Recycle Boucle Knit Cardigan Black',
-                price: '120',
+              ProductInformationWidget(
+                brand: product!.productName,
+                description: product!.description,
+                price: product!.price,
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 20, bottom: 20),
@@ -110,7 +113,7 @@ class ProductsDetailView extends StatelessWidget {
                     },
                     title: 'ADD TO BASKET',
                     color: Constants.titleBlack,
-                    width: 180,
+                    width: 200,
                     height: 40,
                     titleColor: Colors.white,
                     iconData: Icons.shopping_basket_outlined,
