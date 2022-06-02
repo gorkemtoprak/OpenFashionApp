@@ -16,7 +16,7 @@ class PaymentView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: customAppBarWithBack(context),
-      backgroundColor: Colors.white,
+      backgroundColor: Constants.offWhiteColor,
       body: Padding(
         padding: customPadding(),
         child: Column(

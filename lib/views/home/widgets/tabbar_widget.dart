@@ -75,7 +75,8 @@ class _HomeTabBarWidgetState extends State<HomeTabBarWidget>
             ),
             Tab(
               child: Text(
-                'Bag',
+                'Accessory',
+                overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                   fontFamily: 'Handlee',
                   fontSize: 16,
@@ -94,16 +95,16 @@ class _HomeTabBarWidgetState extends State<HomeTabBarWidget>
         ),
         const SizedBox(height: 20),
         SizedBox(
-          height: screenHeight(context) / 1.9,
+          height: screenHeight(context),
           width: screenWidth(context),
           child: TabBarView(
             controller: _controller,
             children: const [
-              AllProductsGridWidget(),
-              AllProductsGridWidget(),
-              AllProductsGridWidget(),
-              AllProductsGridWidget(),
-              AllProductsGridWidget(),
+              AllProductsGridWidget(type: 'Apparel'),
+              AllProductsGridWidget(type: 'Apparel'),
+              AllProductsGridWidget(type: 'Dress'),
+              AllProductsGridWidget(type: 'Tshirt'),
+              AllProductsGridWidget(type: 'Accessory'),
             ],
           ),
         ),

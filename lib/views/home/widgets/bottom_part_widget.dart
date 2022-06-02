@@ -19,10 +19,8 @@ class BottomPartWidget extends StatelessWidget {
           title: 'NEW ARRIVAL',
         ),
         const HomeTabBarWidget(),
-        SizedBox(
-          width: screenWidth(context) / 2,
-          child: Constants.line,
-        ),
+        const SizedBox(height: 20),
+        customLine(context),
         const Padding(
           padding: EdgeInsets.only(
             top: 10,
