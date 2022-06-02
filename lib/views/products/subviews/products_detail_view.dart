@@ -85,7 +85,9 @@ class ProductsDetailView extends StatelessWidget {
                       ),
                     ),
                     const Spacer(),
-                    ProductSizesWidget(products: products[0]),
+                    product!.type! == 'Accessory'
+                        ? const SizedBox()
+                        : ProductSizesWidget(products: product),
                   ],
                 ),
               ),

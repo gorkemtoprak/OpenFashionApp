@@ -23,6 +23,7 @@ dependencies:
   tab_indicator_styler: ^2.0.0
   flutter_credit_card: ^3.0.1
   sliding_sheet: ^0.5.2
+  photo_view: ^0.14.0
 
   #ROUTING
   auto_route: ^4.0.1

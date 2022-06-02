@@ -176,7 +176,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Ring',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '14',
@@ -186,7 +186,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Ring',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '15',
@@ -196,7 +196,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Ring',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '16',
@@ -206,7 +206,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Ring',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '17',
@@ -216,7 +216,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Bag',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '18',
@@ -226,7 +226,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Bag',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '19',
@@ -236,7 +236,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Bag',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '20',
@@ -246,7 +246,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Bag',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '21',
@@ -256,7 +256,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Bag',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '22',
@@ -266,7 +266,7 @@ final List<ProductModel> products = [
     price: '\$${40}',
     ratings: '3.9',
     sizes: ['S', 'M', 'L'],
-    type: 'Bag',
+    type: 'Accessory',
   ),
   ProductModel(
     id: '23',

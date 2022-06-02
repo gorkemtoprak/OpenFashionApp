@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:open_fashion_app/views/blog/blog_view.dart';
 import 'package:open_fashion_app/views/checkout/checkout_view.dart';
 import 'package:open_fashion_app/views/menu/contact_us/contact_us_view.dart';
+import 'package:open_fashion_app/views/menu/my_adress/my_adress_view.dart';
 import 'package:open_fashion_app/views/menu/payment/payment_view.dart';
 import 'package:open_fashion_app/views/products/products_view.dart';
 import 'package:open_fashion_app/views/products/subviews/products_detail_view.dart';
@@ -45,6 +46,11 @@ import '../../views/menu/about_us/about_us_view.dart';
       page: ProductsDetailView,
       name: 'productDetail',
       path: '/productDetail',
+    ),
+    AutoRoute(
+      page: MyAdressView,
+      name: 'myAdress',
+      path: '/myAdress',
     ),
   ],
 )

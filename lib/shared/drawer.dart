@@ -25,7 +25,9 @@ class NavigationDrawerWidget extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
               buildMenuItem(
-                onClicked: () {},
+                onClicked: () {
+                  AutoRouter.of(context).pushNamed('/myAdress');
+                },
                 text: 'My Addresses',
                 icon: Icons.my_location_outlined,
               ),
