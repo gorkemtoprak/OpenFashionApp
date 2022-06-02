@@ -37,7 +37,7 @@ class BlogCardWidget extends StatelessWidget {
                   style: const TextStyle(
                     color: Colors.white,
                     fontSize: 18,
-                    // fontFamily: 'Handlee',
+                    fontFamily: 'Handlee',
                     fontWeight: FontWeight.bold,
                   ),
                 ), //Text

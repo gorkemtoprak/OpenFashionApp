@@ -9,6 +9,7 @@ class ProductModel {
   String? productImage;
   String? price;
   String? ratings;
+  String? type;
   List<String>? sizes;
   ProductModel({
     this.id,
@@ -17,6 +18,7 @@ class ProductModel {
     this.productImage,
     this.price,
     this.ratings,
+    this.type,
     this.sizes,
   });
 
@@ -27,6 +29,7 @@ class ProductModel {
     String? productImage,
     String? price,
     String? ratings,
+    String? type,
     List<String>? sizes,
   }) {
     return ProductModel(
@@ -36,6 +39,7 @@ class ProductModel {
       productImage: productImage ?? this.productImage,
       price: price ?? this.price,
       ratings: ratings ?? this.ratings,
+      type: type ?? this.type,
       sizes: sizes ?? this.sizes,
     );
   }
@@ -48,6 +52,7 @@ class ProductModel {
       'productImage': productImage,
       'price': price,
       'ratings': ratings,
+      'type': type,
       'sizes': sizes,
     };
   }
@@ -60,6 +65,7 @@ class ProductModel {
       productImage: map['productImage'],
       price: map['price'],
       ratings: map['ratings'],
+      type: map['type'],
       sizes: List<String>.from(map['sizes']),
     );
   }
@@ -71,7 +77,7 @@ class ProductModel {
 
   @override
   String toString() {
-    return 'ProductModel(id: $id, productName: $productName, description: $description, productImage: $productImage, price: $price, ratings: $ratings, sizes: $sizes)';
+    return 'ProductModel(id: $id, productName: $productName, description: $description, productImage: $productImage, price: $price, ratings: $ratings, type: $type, sizes: $sizes)';
   }
 
   @override
@@ -85,6 +91,7 @@ class ProductModel {
         other.productImage == productImage &&
         other.price == price &&
         other.ratings == ratings &&
+        other.type == type &&
         listEquals(other.sizes, sizes);
   }
 
@@ -96,6 +103,7 @@ class ProductModel {
         productImage.hashCode ^
         price.hashCode ^
         ratings.hashCode ^
+        type.hashCode ^
         sizes.hashCode;
   }
 }

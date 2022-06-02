@@ -12,6 +12,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  #LOGIC
+  stacked: ^2.3.8
+
   #UTILS
   cupertino_icons: ^1.0.2
   expandable: ^5.0.1

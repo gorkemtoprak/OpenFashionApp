@@ -50,11 +50,6 @@ class NavigationDrawerWidget extends StatelessWidget {
                 text: 'Contact Us',
                 icon: Icons.quick_contacts_dialer_outlined,
               ),
-              buildMenuItem(
-                onClicked: () {},
-                text: 'Help',
-                icon: Icons.help_center_outlined,
-              ),
               const SizedBox(height: 40),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -110,6 +105,8 @@ Widget buildMenuItem({
       text,
       style: const TextStyle(
         color: color,
+        fontFamily: 'Handlee',
+        fontSize: 16,
       ),
     ),
     hoverColor: hoverColor,

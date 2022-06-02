@@ -35,6 +35,7 @@ class BlogDetailView extends StatelessWidget {
                   style: const TextStyle(
                     color: Constants.bodyColor,
                     fontSize: 16,
+                    fontFamily: 'Handlee',
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -44,6 +45,7 @@ class BlogDetailView extends StatelessWidget {
                   style: const TextStyle(
                     color: Constants.labelColor,
                     fontSize: 14,
+                    fontFamily: 'Handlee',
                     fontWeight: FontWeight.w500,
                   ),
                 ),
